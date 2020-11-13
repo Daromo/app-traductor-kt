@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--CONTENEDOR IMAGEN-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
+            <ImageView
+                android:background="@drawable/bg_img_section_home"
+                android:src="@drawable/bg_fragment_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!--CONTENEDOR TITULOS-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/tvWelcomeEs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Bienvenido!"
+                    style="@style/textTitleHome"
+                    android:layout_marginLeft="@dimen/marginLeftHome"/>
+
+                <TextView
+                    android:id="@+id/tvWelcomePo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Jínaxín f'íaa!"
+                    style="@style/textTitleHome"
+                    android:layout_marginLeft="@dimen/marginLeftHome"
+                    android:layout_below="@id/tvWelcomeEs"/>
+
+                <ImageView
+                    android:id="@+id/imgHand"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_hand"
+                    android:layout_toRightOf="@id/tvWelcomePo"
+                    android:layout_alignBottom="@id/tvWelcomePo"
+                    android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <!--CONTENEDOR DESCRIPCION-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_description"
+                style="@style/textHome"
+                android:layout_marginRight="@dimen/marginRightHome"
+                android:layout_marginLeft="@dimen/marginLeftHome"
+            android:layout_marginBottom="@dimen/marginBottomHome"/>
+        </LinearLayout>
+
+        <!--CONTENEDOR IMAGENES-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="@dimen/sizeImageFace"
+                    android:layout_height="@dimen/sizeImageFace"
+                    android:src="@drawable/img_face1"/>
+
+                <ImageView
+                    android:layout_width="@dimen/sizeImageFace"
+                    android:layout_height="@dimen/sizeImageFace"
+                    android:src="@drawable/img_face2"
+                    android:layout_toRightOf="@id/img1"
+                    android:layout_marginLeft="30dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi traductor es una App para todo el público"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

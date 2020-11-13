@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Popoloca</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_description">Este Traductor es una App para traducir palabras de español a popoloca con el fin de
+    conocer y aprender sobre esta lengua</string>
+    <string name="description_fragment_translate">En esta sección podras traducir tus palabras de Español a Popoloca</string>
+    <string name="description_fragment_abecedario">En esta sección conocerás el alfabeto: Deberás pulsar una letra si deseas escuchar
+    su pronunciación</string>
+</resources>

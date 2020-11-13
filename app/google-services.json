@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "621196255540",
+    "firebase_url": "https://traductorpopolocaapp.firebaseio.com",
+    "project_id": "traductorpopolocaapp",
+    "storage_bucket": "traductorpopolocaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621196255540:android:b5d4a7aff1ab406a674561",
+        "android_client_info": {
+          "package_name": "com.traductor.popoloca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621196255540-1vcog2uh82r7ngh3gvg58bvuto7k6g2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.traductor.popoloca",
+            "certificate_hash": "a126c37c1900694c21414618b5a14ebd4bca1f48"
+          }
+        },
+        {
+          "client_id": "621196255540-qok01did3719e1r13ue43pflhdva0d8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8uAjTOUMGsSV2ElUKytnU9GnNYI31EaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621196255540-qok01did3719e1r13ue43pflhdva0d8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

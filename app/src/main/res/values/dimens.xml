@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DIMENS FRAGMENT HOME-->
+    <dimen name="marginLeftHome">20dp</dimen>
+    <dimen name="marginRightHome">20dp</dimen>
+    <dimen name="marginBottomHome">10dp</dimen>
+
+    <!--DIMENS FRAGMENT TRANSLATE-->
+    <dimen name="marginLeftTraductor">20dp</dimen>
+    <dimen name="marginRightTraductor">20dp</dimen>
+    <dimen name="marginBottomTraductor">10dp</dimen>
+
+    <!--ITEM IMAGE-->
+    <dimen name="altoImageView">150dp</dimen>
+
+    <dimen name="tamanioTitulo">20sp</dimen>
+    <dimen name="marginHomeSubtitulo">10dp</dimen>
+    <dimen name="tamanioSubtitulo">15sp</dimen>
+
+    <!--IMAGE FACE HOME-->
+    <dimen name="sizeImageFace">130dp</dimen>
+
+    <dimen name="marginBetwenButtons">10dp</dimen>
+
+</resources>

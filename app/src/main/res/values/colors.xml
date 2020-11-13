@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B396A</color>
+    <color name="colorPrimaryDark">#00143f</color>
+    <color name="colorAccent">#4d6398</color>
+
+    <color name="colorStatusBar">#E7EEFB</color>
+    <color name="colorImageSection">#AB97F3</color>
+    <color name="colorButton">#AB97F3</color>
+    <color name="sectionTranslateResult">#FCD4DE</color>
+    <color name="sectionImages">#FFECB2</color>
+</resources>

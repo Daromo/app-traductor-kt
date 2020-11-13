@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/item_home">
+
+    <fragment
+        android:id="@+id/item_home"
+        android:name="com.traductor.popoloca.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_traductorFragment"
+            app:destination="@id/item_traductor" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_traductor"
+        android:name="com.traductor.popoloca.view.ui.fragments.TraductorFragment"
+        android:label="fragment_traductor"
+        tools:layout="@layout/fragment_traductor" >
+        <action
+            android:id="@+id/action_traductorFragment_to_imagenFragment"
+            app:destination="@id/item_imagen" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_imagen"
+        android:name="com.traductor.popoloca.view.ui.fragments.ImagenFragment"
+        android:label="fragment_imagen"
+        tools:layout="@layout/fragment_imagen" >
+        <action
+            android:id="@+id/action_imagenFragment_to_abecedarioFragment"
+            app:destination="@id/item_alfabeto" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_alfabeto"
+        android:name="com.traductor.popoloca.view.ui.fragments.AbecedarioFragment"
+        android:label="fragment_abecedario"
+        tools:layout="@layout/fragment_abecedario" />
+</navigation>

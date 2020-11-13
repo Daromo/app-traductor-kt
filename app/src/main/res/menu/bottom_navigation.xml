@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/item_traductor"
+        android:icon="@drawable/ic_menu_search"
+        android:title="Traductor" />
+
+    <item
+        android:id="@+id/item_imagen"
+        android:icon="@drawable/ic_menu_image"
+        android:title="Imagen" />
+
+    <item
+        android:id="@+id/item_alfabeto"
+        android:icon="@drawable/ic_menu_letters"
+        android:title="Alfabeto" />
+</menu>

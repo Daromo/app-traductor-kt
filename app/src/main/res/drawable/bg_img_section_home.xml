@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorStatusBar"/>
+            <corners
+                android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="0dp"/>
+            <stroke
+                android:width="2dp"
+                android:color="@color/colorStatusBar"/>
+        </shape>
+    </item>
+    <!--COLOR ANTERIOR:#AB97F3 -->
+</selector>
