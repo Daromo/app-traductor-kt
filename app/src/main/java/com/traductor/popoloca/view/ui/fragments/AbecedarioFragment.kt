@@ -1,9 +1,12 @@
 package com.traductor.popoloca.view.ui.fragments
 
 
+import android.content.Context
 import android.media.AudioAttributes
 import android.media.AudioManager
 import android.media.MediaPlayer
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -53,12 +56,16 @@ class AbecedarioFragment : Fragment() {
             buttonAdapter.onItemClick = {alphabetLetter ->
                 val myURL = alphabetLetter.sound
                 Log.d("Click","LINK: "+ myURL)
-                try{
-                    mp = MediaPlayer.create(context, Uri.parse(myURL));
-                    mp.start()
-                }catch (e: Exception){
-                    e.printStackTrace()
-                    Log.d("Click","ERROR")
+                if(isWifiConnected(context)){
+                    try{
+                        mp = MediaPlayer.create(context, Uri.parse(myURL));
+                        mp.start()
+                    }catch (e: Exception){
+                        e.printStackTrace()
+                        Log.d("Click","ERROR")
+                    }
+                }else{
+                    val toast = Toast.makeText(context, "¡Ups! Parece que no tiene conexión a internet", Toast.LENGTH_SHORT).show()
                 }
             }
         }
@@ -69,5 +76,16 @@ class AbecedarioFragment : Fragment() {
         viewModel.listLetter.observe(this, Observer<List<AlphabetLetter>>{ letter ->
             buttonAdapter.updateData(letter)
         })
+    }
+
+    fun isWifiConnected(context: Context): Boolean{
+        val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        return if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+            val network = connectivityManager.activeNetwork
+            val capabilities = connectivityManager.getNetworkCapabilities(network)
+            capabilities != null && capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
+        } else {
+            connectivityManager.activeNetworkInfo.type == ConnectivityManager.TYPE_WIFI
+        }
     }
 }

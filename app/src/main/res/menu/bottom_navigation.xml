@@ -12,7 +12,7 @@
     <item
         android:id="@+id/item_imagen"
         android:icon="@drawable/ic_menu_image"
-        android:title="Imagen" />
+        android:title="Geleria" />
 
     <item
         android:id="@+id/item_alfabeto"

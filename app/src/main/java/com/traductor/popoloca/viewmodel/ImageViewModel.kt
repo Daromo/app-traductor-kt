@@ -13,8 +13,12 @@ class ImageViewModel :ViewModel() {
     var isLoading = MutableLiveData<Boolean>()
 
     //OBTENER LOS DATOS DE FIREBASE
-    fun refresh (){
-        getImageFromFirebase()
+    fun refresh (categoria : String){
+        if (categoria.equals("default")){
+            getImageFromFirebase()
+        }else{
+            getImageFromFirebase(categoria)
+        }
     }
 
     fun getImageFromFirebase(){
@@ -23,11 +27,22 @@ class ImageViewModel :ViewModel() {
                 listImage.postValue(result)
                 processFinished()
             }
-
             override fun onFailed(exception: Exception) {
                 processFinished()
             }
         })
+    }
+
+    fun getImageFromFirebase(categoria : String){
+        firestoreService.getImages(object: Callback<List<Image>>{
+            override fun onSuccess(result: List<Image>?) {
+                listImage.postValue(result)
+                processFinished()
+            }
+            override fun onFailed(exception: Exception) {
+                processFinished()
+            }
+        }, categoria)
     }
 
     fun processFinished(){

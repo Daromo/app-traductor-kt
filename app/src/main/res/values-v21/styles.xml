@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="letrasAbecedario">
-        <item name="android:backgroundTint">@color/colorButton</item>
+    <!--<style name="styleBtnAnimales">
+        <item name="android:backgroundTint">@color/colorBtnAnimales</item>
         <item name="android:textAllCaps">false</item>
-        <!--<item name="android:layout_marginLeft">@dimen/marginBetwenButtons</item>-->
+        <item name="android:textColor">#000</item>
     </style>
+
+    <style name="styleBtnFamilia">
+        <item name="android:backgroundTint">@color/colorBtnFamilia</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="styleBtnFrutas">
+        <item name="android:backgroundTint">@color/colorBtnFrutas</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#000</item>
+    </style>-->
 </resources>

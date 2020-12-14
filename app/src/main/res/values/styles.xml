@@ -10,13 +10,26 @@
 
     <style name="textTitleHome">
         <item name="android:fontFamily">@font/baloo2</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">17sp</item>
         <item name="android:textColor">#000</item>
     </style>
 
     <style name="textHome">
-        <item name="android:fontFamily">@font/baloo2</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="android:textSize">17sp</item>
     </style>
 
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="checkedIcon">@drawable/ic_check</item>
+        <item name="rippleColor">@color/whiteAlpha</item>
+    </style>
+
+    <style name="letrasAbecedario">
+        <item name="android:backgroundTint">@color/colorButton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>

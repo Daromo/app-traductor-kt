@@ -4,12 +4,9 @@ import android.animation.Animator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import com.airbnb.lottie.LottieAnimationView
 import com.traductor.popoloca.R
 import kotlinx.android.synthetic.main.activity_splashscreen.*
-import kotlinx.android.synthetic.main.item_image.*
 
 class SplashscreenActivity : AppCompatActivity() {
 
@@ -34,7 +31,6 @@ class SplashscreenActivity : AppCompatActivity() {
             }
 
             override fun onAnimationStart(animation: Animator?) {
-
             }
 
         })

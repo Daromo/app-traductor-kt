@@ -65,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/home_description"
                 style="@style/textHome"
+                android:textColor="#000"
                 android:layout_marginRight="@dimen/marginRightHome"
                 android:layout_marginLeft="@dimen/marginLeftHome"
             android:layout_marginBottom="@dimen/marginBottomHome"/>
@@ -100,8 +101,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mi traductor es una App para todo el público"
+                android:text="Ngiwa es una App para todo el público"
+                android:fontFamily="@font/nunito_sans"
                 android:layout_gravity="center"
+                android:textColor="#000"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
 

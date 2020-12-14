@@ -56,8 +56,7 @@
                     android:layout_height="wrap_content"
                     android:text="Traducir"
                     android:layout_marginLeft="@dimen/marginLeftTraductor"
-                    android:layout_marginBottom="@dimen/marginBottomTraductor"
-                    android:background="#fff"/>
+                    android:layout_marginBottom="@dimen/marginBottomTraductor"/>
 
             </LinearLayout>
         </LinearLayout>
