@@ -8,17 +8,12 @@
     <color name="colorImageSection">#AB97F3</color>
     <color name="colorButton">#AB97F3</color>
     <color name="sectionTranslateResult">#FCD4DE</color>
-
-    <!--<color name="colorBtnAnimales">#FFECB2</color>
-    <color name="colorBtnFamilia">#FCD4DE</color>
-    <color name="colorBtnFrutas">#D7EDFC</color>-->
-
-    <color name="colorBtnAnimales">#C4F2FF</color>
-    <color name="colorBtnFamilia">#FFD6F1</color>
-    <color name="colorBtnFrutas">#CCFFAB</color>
     
     <color name="white">#FFF</color>
     <color name="whiteAlpha">#10FFFFFF</color>
     <color name="mediumGrey">#DEDEDE</color>
     <color name="darkGrey">#858585</color>
+
+    <color name="orange">#FDA638</color>
+    <color name="Purple">#5D50C6</color>
 </resources>

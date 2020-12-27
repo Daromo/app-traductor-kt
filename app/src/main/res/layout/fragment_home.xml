@@ -27,31 +27,33 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.4"
+
             android:layout_marginBottom="10dp">
-                <TextView
-                    android:id="@+id/tvWelcomeEs"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="¡Bienvenido!"
-                    style="@style/textTitleHome"
-                    android:layout_marginLeft="@dimen/marginLeftHome"/>
 
                 <TextView
                     android:id="@+id/tvWelcomePo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="¡Jínaxín f'íaa!"
-                    style="@style/textTitleHome"
+                    style="@style/titleHomePopoloca"
+                    android:layout_marginLeft="@dimen/marginLeftHome"/>
+
+                <TextView
+                    android:id="@+id/tvWelcomeEs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="¡Bienvenido!"
+                    style="@style/titleHomeEspanol"
                     android:layout_marginLeft="@dimen/marginLeftHome"
-                    android:layout_below="@id/tvWelcomeEs"/>
+                    android:layout_below="@id/tvWelcomePo"/>
 
                 <ImageView
                     android:id="@+id/imgHand"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/ic_hand"
-                    android:layout_toRightOf="@id/tvWelcomePo"
-                    android:layout_alignBottom="@id/tvWelcomePo"
+                    android:layout_toRightOf="@id/tvWelcomeEs"
+                    android:layout_alignBottom="@id/tvWelcomeEs"
                     android:layout_marginLeft="10dp"/>
         </RelativeLayout>
 
@@ -64,8 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/home_description"
-                style="@style/textHome"
-                android:textColor="#000"
+                style="@style/textDescriptionHome"
                 android:layout_marginRight="@dimen/marginRightHome"
                 android:layout_marginLeft="@dimen/marginLeftHome"
             android:layout_marginBottom="@dimen/marginBottomHome"/>
@@ -102,8 +103,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ngiwa es una App para todo el público"
-                android:fontFamily="@font/nunito_sans"
+                android:fontFamily="@font/baloo2"
                 android:layout_gravity="center"
+                android:textSize="15sp"
                 android:textColor="#000"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
