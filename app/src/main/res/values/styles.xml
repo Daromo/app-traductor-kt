@@ -20,6 +20,18 @@
         <item name="android:textColor">@color/orange</item>
     </style>
 
+    <style name="titleContribuirSection">
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#5D50C6</item>
+    </style>
+
+    <style name="textDescriptionContribuir">
+        <item name="android:fontFamily">@font/baloo2</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
     <style name="textDescriptionHome">
         <item name="android:fontFamily">@font/baloo2</item>
         <item name="android:textSize">16sp</item>

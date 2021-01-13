@@ -7,4 +7,6 @@
     <string name="description_fragment_translate">En esta sección podras traducir tus palabras de Español a Popoloca</string>
     <string name="description_fragment_abecedario">En esta sección conocerás el alfabeto: Deberás pulsar una letra si deseas escuchar
     su pronunciación</string>
+    <string name="description_fragment_contribuir">Puedes proponer cambios en las traducciones de las palabras, de modo que se
+    pueda mejorar la calidad de las mismas y asi conprender mejor el idioma.</string>
 </resources>

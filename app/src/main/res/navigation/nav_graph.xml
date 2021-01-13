@@ -36,5 +36,15 @@
         android:id="@+id/item_alfabeto"
         android:name="com.traductor.popoloca.view.ui.fragments.AbecedarioFragment"
         android:label="fragment_abecedario"
-        tools:layout="@layout/fragment_abecedario" />
+        tools:layout="@layout/fragment_abecedario" >
+        <action
+            android:id="@+id/action_item_alfabeto_to_contribuirFragment2"
+            app:destination="@id/item_contribuir" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_contribuir"
+        android:name="com.traductor.popoloca.view.ui.fragments.ContribuirFragment"
+        android:label="fragment_contribuir"
+        tools:layout="@layout/fragment_contribuir"/>
 </navigation>
