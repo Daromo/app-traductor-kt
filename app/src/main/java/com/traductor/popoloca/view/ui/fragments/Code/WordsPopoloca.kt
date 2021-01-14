@@ -649,8 +649,8 @@ object WordsPopoloca {
             "TÍO" to "chrinina",
             "HIJA" to "Xanꞌna",
             "HIJO" to "Xanꞌna",
-            "HERMANO" to "xichian",
-            "HERMANA" to "ichian"
+            "HERMANA" to "xichian",
+            "HERMANO" to "ichian"
 
             )
 
