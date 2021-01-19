@@ -17,6 +17,7 @@ import com.traductor.popoloca.R
 import com.traductor.popoloca.model.AlphabetLetter
 import com.traductor.popoloca.view.adapter.ButtonAdapter
 import com.traductor.popoloca.view.ui.fragments.Code.Automata
+import com.traductor.popoloca.view.ui.fragments.Code.DescriptionWords
 import com.traductor.popoloca.viewmodel.AlphabetLetterViewModel
 import kotlinx.android.synthetic.main.fragment_abecedario.*
 import kotlinx.android.synthetic.main.fragment_imagen.*
@@ -30,17 +31,21 @@ class TraductorFragment : Fragment() {
     private lateinit var word:TextInputEditText
     private lateinit var result: TextView
     private lateinit var search: Button
+    private lateinit var description: TextView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_traductor, container, false)
         word=view.findViewById(R.id.txtEspanol)
         result=view.findViewById(R.id.textResult)
         search=view.findViewById(R.id.btnTraductor)
+        description=view.findViewById(R.id.textDescription)
 
         search.setOnClickListener {
 
             var automata=Automata()
             result.text=automata.validateWord(word.text.toString())
+
+            description.text=DescriptionWords.descriptionW(result.text.toString())
 
         }
         return view

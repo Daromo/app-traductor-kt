@@ -104,7 +104,6 @@ object WordsPopoloca {
             "MACHETE" to "chia taade",
             "HACHA" to "jaacha",
             "CLAVO" to "chia didoꞌo nthaa",
-            "" to "",
             "HOZ" to "juso",
             "ARADO" to "ninge",
             "PALA" to "paala",
@@ -120,7 +119,6 @@ object WordsPopoloca {
             "SEÑORA" to "naniita",
             "ABUELO" to "dachrichjan",
             "ABUELA" to "nachrichjan",
-            "" to "",
             //CUERPO HUMANO
             "CARA" to "ngakon ni",
             "CABELLO" to "xrajaa ni",

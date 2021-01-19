@@ -76,9 +76,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_margin="10dp"
                 android:layout_weight="0.5"
                 android:background="@drawable/bg_section_translate_pink"
-                android:layout_margin="10dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textResult"
@@ -88,6 +89,17 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="@dimen/marginRightTraductor"
                     android:text="Tú palabra en popoloca es:" />
+
+                <TextView
+                    android:id="@+id/textDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginLeft="@dimen/marginLeftTraductor"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="@dimen/marginRightTraductor"
+                    tools:text="Description" />
+
             </LinearLayout>
 
         </LinearLayout>
