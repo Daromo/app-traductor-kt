@@ -6,9 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.android.material.textfield.TextInputEditText
+import com.traductor.popoloca.Logic.Automata
+import com.traductor.popoloca.Logic.DescriptionWords
 
 import com.traductor.popoloca.R
 import com.traductor.popoloca.model.AlphabetLetter
@@ -21,9 +26,27 @@ import kotlinx.android.synthetic.main.fragment_imagen.*
  * A simple [Fragment] subclass.
  */
 class TraductorFragment : Fragment() {
+    private lateinit var word: TextInputEditText
+    private lateinit var result: TextView
+    private lateinit var search: Button
+    private lateinit var description: TextView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_traductor, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_traductor, container, false)
+        word=view.findViewById(R.id.txtEspanol)
+        result=view.findViewById(R.id.textResult)
+        description= view.findViewById(R.id.textDescription)
+        search=view.findViewById(R.id.btnTraductor)
+
+        search.setOnClickListener {
+
+            var automata= Automata()
+            result.text=automata.validateWord(word.text.toString())
+
+            description.text= DescriptionWords.descriptionW(result.text.toString())
+
+        }
+        return view
     }
 
 }

@@ -28,7 +28,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/marginLeftTraductor"
                     android:layout_marginRight="@dimen/marginRightTraductor"
-                    android:text="@string/description_fragment_abecedario"/>
+                    android:text="@string/description_fragment_abecedario"
+                    style="@style/textDescriptionAll"/>
 
             </LinearLayout>
 

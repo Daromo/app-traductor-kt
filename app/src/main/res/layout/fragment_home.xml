@@ -34,7 +34,7 @@
                     android:id="@+id/tvWelcomePo"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="¡Jínaxín f'íaa!"
+                    android:text="¡Datsinga Ra!"
                     style="@style/titleHomePopoloca"
                     android:layout_marginLeft="@dimen/marginLeftHome"/>
 
@@ -86,17 +86,20 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/img1"
+                    android:id="@+id/imgMen"
                     android:layout_width="@dimen/sizeImageFace"
                     android:layout_height="@dimen/sizeImageFace"
-                    android:src="@drawable/img_face1"/>
+                    android:src="@drawable/img_face1"
+                    android:clickable="true"/>
 
                 <ImageView
+                    android:id="@+id/imgWoman"
                     android:layout_width="@dimen/sizeImageFace"
                     android:layout_height="@dimen/sizeImageFace"
                     android:src="@drawable/img_face2"
-                    android:layout_toRightOf="@id/img1"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_toRightOf="@id/imgMen"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="true"/>
             </RelativeLayout>
 
             <TextView

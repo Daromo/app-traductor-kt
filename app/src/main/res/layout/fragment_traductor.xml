@@ -48,7 +48,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="@dimen/marginLeftTraductor"
                     android:layout_marginRight="@dimen/marginRightTraductor"
-                    android:text="@string/description_fragment_translate"/>
+                    android:text="@string/description_fragment_translate"
+                    style="@style/textDescriptionAll"/>
 
                 <Button
                     android:id="@+id/btnTraductor"
@@ -71,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:text="Resultado:"
                 android:textStyle="bold"
+                android:textColor="#000"
                 android:layout_marginLeft="@dimen/marginLeftTraductor"/>
 
             <LinearLayout
@@ -78,15 +80,29 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
                 android:background="@drawable/bg_section_translate_pink"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/textResult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tú palabra en popoloca es:"
+                    style="@style/textDescriptionAll"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="@dimen/marginLeftTraductor"
                     android:layout_marginRight="@dimen/marginRightTraductor"/>
+
+                <TextView
+                    android:id="@+id/textDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginLeft="@dimen/marginLeftTraductor"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="@dimen/marginRightTraductor"
+                    tools:text="Description"
+                    style="@style/textDescriptionAll"/>
             </LinearLayout>
 
         </LinearLayout>

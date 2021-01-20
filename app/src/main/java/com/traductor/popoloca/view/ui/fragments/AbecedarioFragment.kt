@@ -65,7 +65,8 @@ class AbecedarioFragment : Fragment() {
                         Log.d("Click","ERROR")
                     }
                 }else{
-                    val toast = Toast.makeText(context, "¡Ups! Parece que no tiene conexión a internet", Toast.LENGTH_SHORT).show()
+                    val toast = Toast.makeText(context, "¡Ups! Parece que no tiene conexión a " +
+                            "internet", Toast.LENGTH_SHORT).show()
                 }
             }
         }
